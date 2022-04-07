@@ -1,0 +1,16 @@
+{
+    "name": "test_unitaire/php",
+    "type": "phpunit",
+    "authors": [
+        {
+            "name": "Taikhun",
+            "email": "taiyang78190@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TestUnitaire\\" : "src/"
+        }
+    },
+    "require": {}
+}
