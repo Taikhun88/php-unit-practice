@@ -1,1 +1,1 @@
-{"version":1,"defects":{"MathTest::testDouble":3},"times":{"MathTest::testDouble":0.006}}
+{"version":1,"defects":{"MathTest::testDouble":3,"FragmentCachingTest::testConstructorInterface":6},"times":{"MathTest::testDouble":0.006,"FragmentCachingTest::testConstructorInterface":0.006}}
