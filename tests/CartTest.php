@@ -12,7 +12,7 @@ class CartTest extends TestCase
     protected function setUp():void
     {
         Cart::setTax(1.2);
-        $this->cart = new Cart;
+        $this->cart = new Cart();
     }
 
     protected function tearDown(): void
@@ -23,7 +23,7 @@ class CartTest extends TestCase
     public function testTheCartTaxValueCanBeChangedStatically()
     {
         // Setup
-        $this->cart->price = 10;
+        $this->cart->setPrice(10);
 
         // Do something
         Cart::setTax(1.5);
@@ -36,7 +36,7 @@ class CartTest extends TestCase
     public function testNetPriceIsCalculatedCorrectly()
     {
         // Setup or Giver : is the phase where you bring the dependencies to run the execution
-        $this->cart->price = 10;
+        $this->cart->setPrice(10);
 
         // Act or When : is the phase that will execute the thing or Do something 
         $netPrice = $this->cart->getNetPrice();
