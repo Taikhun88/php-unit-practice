@@ -8,6 +8,17 @@ class ExampleTest extends TestCase {
         $string1 = 'TaiTest';
         $string2 = 'TaiTests';
 
-        $this->assertTrue($string1 == $string2);
+        $this->assertFalse($string1 == $string2);
+    }
+
+        public function testProductFunction() 
+    {
+        require 'example-functions.php';
+
+        $product = product(10, 2);
+
+        $this->assertEquals(20, $product);
+        $this->assertNotEquals(10, $product);
     }
 }
+
