@@ -1,5 +1,8 @@
 <?php
 
+namespace App\Tests;
+
+use App\Cart;
 use PHPUnit\Framework\TestCase;
 
 class CartTest extends TestCase 
@@ -7,7 +10,6 @@ class CartTest extends TestCase
     public function testNetPriceIsCalculatedCorrectly()
     {
         // Setup or Giver : is the phase where you bring the dependencies to run the execution
-        require 'src/Cart.php';
         $cart = new Cart();
         $cart->price = 10;
 
