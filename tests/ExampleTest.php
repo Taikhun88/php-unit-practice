@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 
 class ExampleTest extends TestCase {
-    public function testThatTwoStringsAreTheSame() 
+    public function testTwoStringsAreTheSame() 
     {
         $string1 = 'TaiTest';
         $string2 = 'TaiTests';
@@ -11,7 +11,7 @@ class ExampleTest extends TestCase {
         $this->assertFalse($string1 == $string2);
     }
 
-        public function testProductFunction() 
+        public function testProductIsCalculatedCorrectly() 
     {
         require 'example-functions.php';
 
