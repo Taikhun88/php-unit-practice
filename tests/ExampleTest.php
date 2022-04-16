@@ -66,7 +66,7 @@ class ExampleTest extends TestCase {
         // assertIsArray
         $this->assertIsArray([1,2,3]);
         // $this->assertTrue(is_array([1,2,3]));        
+        // $this->assertIsArray(13, 'This is the custom message to say this test of Assertion has failed');
     }
-
 }
 
