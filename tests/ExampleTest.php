@@ -64,9 +64,13 @@ class ExampleTest extends TestCase {
         // $this->assertTrue(21 >= $value);
 
         // assertIsArray
-        $this->assertIsArray([1,2,3]);
+        $this->assertFalse(is_array(321),
+            'Failed asserting that 321 is an array');
+        // $this->assertIsArray([1,2,3]);
         // $this->assertTrue(is_array([1,2,3]));        
         // $this->assertIsArray(13, 'This is the custom message to say this test of Assertion has failed');
+
+        $this->assertEquals('localhost', URL);
     }
 }
 
