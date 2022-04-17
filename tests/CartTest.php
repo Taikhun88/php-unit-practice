@@ -1,4 +1,6 @@
-<?php
+<?php 
+
+declare(strict_types=1);
 
 namespace App\Tests;
 
@@ -43,5 +45,13 @@ class CartTest extends TestCase
         
         // Make or Then : assertions refers to assert or Then. These 3 phases are referred as (Given, When, Then)
         $this->assertEquals(12, $netPrice);
+    }
+
+    public function testErrorHappensWhenPriceIsSetAsString()
+    {
+        $this->expectError();
+        $this->expectErrorMessage('must be of type float');
+
+        $this->cart->setPrice('8.22');        
     }
 }
